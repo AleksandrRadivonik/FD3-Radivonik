@@ -1,0 +1,64 @@
+.Shop 
+{
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.Shop .ShopName
+{
+    background: #00bb00; /* Для старых браузров */
+    background: linear-gradient(to top, #00bb00, #00ff00);
+    color: #ffffff;
+    font-size: xx-large;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.Shop .ProductTable
+{
+    border: 1px solid #eee;
+    border-collapse: collapse;
+	table-layout: fixed;
+	margin-bottom: 20px;
+    width: 100%;
+}
+
+.Shop .ProductTable .ProductTableHead .ProductHead
+{
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
+
+.Shop .ProductTable .ProductTableBody .Product .ProductName
+{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	text-align: left;
+    max-width: 250px;
+}    
+
+.Shop .ProductTable .ProductTableBody .Product .ProductPrice
+{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	text-align: right;
+    max-width: 150px;
+}    
+
+.Shop .ProductTable .ProductTableBody .Product .ProductPhoto
+{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	text-align: center;
+    max-width: 200px;
+}    
+
+.Shop .ProductTable .ProductTableBody .Product .ProductCount
+{
+	padding: 5px 10px;
+	border: 1px solid #eee;
+	text-align: right;
+    max-width: 150px;
+}    
