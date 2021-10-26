@@ -1,3 +1,5 @@
+"use strict";
+
 var Shop = React.createClass({
 
     // Имя
@@ -25,7 +27,7 @@ var Shop = React.createClass({
     // Отбражение в VDOM
     render: function() {
         // VDOM для наименований столбцов таблицы
-        prоductsHead = React.DOM.tr({},
+        var prоductsHead = React.DOM.tr({},
             React.DOM.th({className: "ProductHead"}, "Наименование товара"),
             React.DOM.th({className: "ProductHead"}, "Цена"),
             React.DOM.th({className: "ProductHead"}, "Фото"),
@@ -33,7 +35,7 @@ var Shop = React.createClass({
         );
 
         // Преобразование массива товаров в VDOM
-        prоductsTable = this.props.products.map(v => {  
+        var prоductsTable = this.props.products.map(v => {  
             return React.DOM.tr({key: v.article},
                 React.DOM.td({className: "ProductName"}, v.name),
                 React.DOM.td({className: "ProductPrice"}, v.price.toFixed(2)),
