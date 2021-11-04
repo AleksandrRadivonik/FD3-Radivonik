@@ -27,14 +27,15 @@ let Shop = React.createClass({
     // Начальные значения state
     getInitialState: function () {
         return {
-            products: [...this.props.products],
-            selectProductArticle: ""
+            heads: ["Наименование товара", "Цена", "Фото", "Количество", "Действие"], // наименования столбцов
+            products: [...this.props.products], // товары
+            selectedProductArticle: "" // article выбранного товара
         };
     },
 
     // Выбор продукта
     selectProduct: function (article) {
-        this.setState({selectProductArticle: article});
+        this.setState({selectedProductArticle: article});
     },
 
     // Удаление продукта
@@ -46,17 +47,13 @@ let Shop = React.createClass({
 
     // Отображение в VDOM
     render: function () {
-        // VDOM для наименований столбцов таблицы
-        var productsHead = React.DOM.tr({},
-            React.DOM.th({className: "ProductHead"}, "Наименование товара"),
-            React.DOM.th({className: "ProductHead"}, "Цена"),
-            React.DOM.th({className: "ProductHead"}, "Фото"),
-            React.DOM.th({className: "ProductHead"}, "Количество"),
-            React.DOM.th({className: "ProductHead"}, "Действие"),
+        // Преобразование массива наименований столбцов в VDOM
+        let productsHead = React.DOM.tr({},
+            this.state.heads.map((v, i) => React.DOM.th({key: i, className: "ShopProductHead"}, v))
         );
 
         // Преобразование массива товаров в VDOM
-        var productsTable = this.state.products.map(v =>
+        let productsTable = this.state.products.map(v =>
             React.createElement(Product, {
                 key: v.article,
                 article: v.article,
@@ -64,7 +61,7 @@ let Shop = React.createClass({
                 price: v.price,
                 photo: v.photo,
                 count: v.count,
-                isSelected: v.article == this.state.selectProductArticle,
+                isSelected: v.article == this.state.selectedProductArticle,
                 cbSelect: this.selectProduct,
                 cbDelete: this.deleteProduct
             })
@@ -73,10 +70,10 @@ let Shop = React.createClass({
         // Объединение в результирующий VDOM
         return React.DOM.div({className: "Shop"},
             React.DOM.div({className: "ShopName"}, this.props.name),
-            React.DOM.table({className: "ProductTable"},
+            React.DOM.table({className: "ShopProductTable"},
                 React.DOM.thead({}, productsHead),
-                React.DOM.tbody({}, productsTable),
-            ),
+                React.DOM.tbody({}, productsTable)
+            )
         );
     },
 

@@ -46,3 +46,21 @@
     max-width: 200px;
 }
 
+.Product .ProductButton,
+.ProductSelect .ProductButton {
+    border: 1px solid #006633;
+    background-color: #abafab;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 2px;
+    width: 80px
+}
+
+.Product .ProductButton:hover,
+.ProductSelect .ProductButton:hover {
+    border: 1px solid #006633;
+    background-color: #6d87c0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
