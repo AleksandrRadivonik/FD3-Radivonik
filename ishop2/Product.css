@@ -1,0 +1,66 @@
+.Product {
+    background-color: #ffffff;
+}
+
+.ProductSelect {
+    background-color: #ff9900;
+}
+
+.Product .ProductName,
+.ProductSelect .ProductName {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: left;
+    max-width: 250px;
+}
+
+.Product .ProductPrice,
+.ProductSelect .ProductPrice {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: right;
+    max-width: 150px;
+}
+
+.Product .ProductPhoto,
+.ProductSelect .ProductPhoto {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: center;
+    max-width: 200px;
+}
+
+.Product .ProductCount,
+.ProductSelect .ProductCount {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: right;
+    max-width: 150px;
+}
+
+.Product .ProductAction,
+.ProductSelect .ProductAction {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: center;
+    max-width: 200px;
+}
+
+.Product .ProductButton,
+.ProductSelect .ProductButton {
+    border: 1px solid #006633;
+    background-color: #abafab;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 2px;
+    width: 80px
+}
+
+.Product .ProductButton:hover,
+.ProductSelect .ProductButton:hover {
+    border: 1px solid #006633;
+    background-color: #6d87c0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
