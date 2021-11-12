@@ -1,0 +1,28 @@
+.Shop {
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.Shop .ShopName {
+    background: #00bb00; /* Для старых браузеров */
+    background: linear-gradient(to top, #00bb00, #00ff00);
+    color: #ffffff;
+    font-size: xx-large;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 60%;
+}
+
+.Shop .ShopTable {
+	border: 1px solid #eee;
+	border-collapse: collapse;
+	margin-bottom: 20px;
+	width: 60%;
+}
+
+.Shop .ShopTable .ShopTableHead {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+}
