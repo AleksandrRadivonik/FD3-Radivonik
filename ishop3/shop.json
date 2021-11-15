@@ -3,7 +3,7 @@
   "products": [
     {"id": 1, "name": "Стиральная машина INDESIT IWUB 41051 BY", "price": 489, "photo": "img/1.jpg", "count": 55},
     {"id": 2, "name": "Утюг BRAUN SI9188EBK", "price": 219, "photo": "img/2.jpg", "count": 100},
-    {"id": 3, "name": "Робот-пылесос Xiaomi Mi Robot Vacuum-Mop SKV4093GL", "price": 699, "photo": "img/3.jpg", "count": 10},
+    {"id": 3, "name": "Робот-пылесос Xiaomi Mi Robot Vacuum-Mop SKV4093GL", "price": 699.50, "photo": "img/3.jpg", "count": 10},
     {"id": 4, "name": "Чайник электрический NORMANN AKL-236", "price": 41.25, "photo": "img/4.jpg", "count": 300},
     {"id": 5, "name": "Эспрессо кофемашина Philips EP2030/10", "price": 1499, "photo": "img/5.jpg", "count": 50}
   ]
