@@ -12,7 +12,12 @@ class BR2JSX extends React.Component {
         // Формирование массива с чередующимися строками и тэгами <br>
         let textWithBr =
             this.props.text.split(/<br\s*\/?>/g).reduce((ar, t, i) =>
-                i === 0 ? [...ar, t] : [...ar, <br key={i}/>, t],
+                // i === 0 ? [...ar, t] : [...ar, <br key={i}/>, t], // тоже рабочий вариант, но непроизводительно
+                {
+                    if (i > 0) ar.push(<br key={i} />);
+                    ar.push(t);
+                    return ar;
+                },
                 []
             );
 
