@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React from "react";
 import PropTypes from "prop-types";
 
 class RainbowFrame extends React.Component {
@@ -17,9 +17,7 @@ class RainbowFrame extends React.Component {
             );
 
         return (
-            <Fragment>
-                {frames}
-            </Fragment>
+            frames
         );
     }
 
