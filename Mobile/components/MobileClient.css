@@ -1,0 +1,59 @@
+.Client {
+    background-color: #ffffff;
+}
+
+.Client .Name {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: left;
+    max-width: 250px;
+}
+
+.Client .Balance {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: right;
+    max-width: 150px;
+}
+
+.Client .StatusActive {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: center;
+    max-width: 120px;
+    background-color: #34d76b;
+}
+
+.Client .StatusBlocked {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: center;
+    max-width: 120px;
+    background-color: #ee3d3d;
+}
+
+.Client .Action {
+    padding: 5px 10px;
+    border: 1px solid #eee;
+    text-align: center;
+    max-width: 120px;
+}
+
+.Client .Button {
+    border: 1px solid #006633;
+    background-color: #aac8ee;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+    width: auto;
+}
+
+.Client .Button:hover {
+    border: 1px solid #006633;
+    background-color: #d0e2f0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
