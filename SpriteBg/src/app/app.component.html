@@ -1,0 +1,16 @@
+<span>Смайлик по-умолчанию:</span>
+<div sprite-bg></div>
+<br>
+<span>Элементы спрайта в виде таблицы:</span>
+<div *ngFor="let row of [0, 1, 2, 3];">
+  <div sprite-bg
+       *ngFor="let col of [0, 1, 2, 3, 4];"
+       sprite-url="http://fe.it-academy.by/Examples/smileys.png"
+       [sprite-offset-x]="(-25 * col) + 'px'"
+       [sprite-offset-y]="(-25 * row) + 'px'"
+       sprite-width="25px"
+       sprite-height="25px"
+       style="display: inline-block; color: blue; zoom: 500%;">
+  {{row * 5 + col + 1}}
+  </div>
+</div>
