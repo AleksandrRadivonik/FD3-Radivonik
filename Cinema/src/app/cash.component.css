@@ -1,0 +1,65 @@
+.Cash {
+  border: 1px solid limegreen;
+  width: 60%;
+  padding: 5px;
+  margin: 10px;
+  color: #5c5c5c;
+}
+
+.CashName {
+  color: limegreen;
+}
+
+.TicketsLabel {
+  display: inline-block;
+  width: 250px;
+  text-align: left;
+}
+
+.TicketsInput {
+  display: inline-block;
+  text-align: right;
+  width: 80px;
+  border: 1px solid #d6d6d6;
+  padding: 2px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.TicketsInput:focus,
+.TicketsInput:hover {
+  border: 1px solid cornflowerblue;
+}
+
+.HoldInfo {
+  font-size: small;
+  color: limegreen;
+}
+
+.HoldError {
+  font-size: small;
+  color: red;
+}
+
+.HoldButton {
+  border: 1px solid #006633;
+  background-color: limegreen;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: auto;
+}
+
+.HoldButton:hover {
+  border: 1px solid #006633;
+  background-color: lime;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.HoldButton:disabled {
+  background-color: #999999;
+  cursor: default;
+}
