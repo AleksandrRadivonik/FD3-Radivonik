@@ -1,0 +1,18 @@
+<div class="Hall">
+  <h1 class="HallName">{{name}}</h1>
+  <span class="HallLabel">Всего мест в зале: </span><span class="HallTotal">{{getTotal()}}</span>
+  <br>
+  <span class="HallLabel">Занято мест: </span><span class="HallHold">{{getHold()}}</span>
+  <div class="PlaceHold"></div>
+  <br>
+  <span class="HallLabel">Свободных мест: </span><span class="HallFree">{{getFree()}}</span>
+  <div class="PlaceFree"></div>
+  <br>
+  <br>
+  <div *ngFor="let placeR of getPlaces(); let i = index;">
+   <span class="Row">Ряд {{i+1}}</span>
+    <div [class]="place ? 'PlaceHold' : 'PlaceFree'" *ngFor="let place of placeR; let j = index;">
+    {{j+1}}
+    </div>
+  </div>
+</div>
